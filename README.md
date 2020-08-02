@@ -19,6 +19,7 @@ unzip CASIA-maxpy-clean_fix.zip
 
 (https://pan.baidu.com/s/1Rue4FBmGvdGMPkyy2ZqcdQ)
 
+## Homework Result
 
 |      SEResNet18       |   LFW              |       SEResNet34      |   LFW              |
 |:---------------------:|:------------------:|:---------------------:|:------------------:|
