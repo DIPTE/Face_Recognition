@@ -22,3 +22,15 @@ Chapter5 - Homework - loss_function&amp;Deep_Metric_Learning - shenlanxueyuan
 |Triplet（Scratch）	    |                    |Triplet（Scratch）	    |                    |
 |Contrastive（Finetune）|                    |Contrastive（Finetune） |                    |		
 |Triplet（Finetune）	  |                    |Triplet（Finetune） 	  |                    |
+ 
+##Dataset find it in GITHUB Share
+ 
+# 1.casia-maxpy-clean.zip
+https://drive.google.com/file/d/1wJC2aPA4AC0rI-tAL2BFs2M8vfcpX-w6/view?usp=sharing
+unzip casia-maxpy-clean.zip
+cd casia-maxpy-clean
+zip -F CASIA-maxpy-clean.zip --out CASIA-maxpy-clean_fix.zip
+unzip CASIA-maxpy-clean_fix.zip
+
+#2.LFW.tar.gz
+https://pan.baidu.com/s/1Rue4FBmGvdGMPkyy2ZqcdQ
