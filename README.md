@@ -30,15 +30,9 @@ unzip CASIA-maxpy-clean_fix.zip
 |       ArcFace         | 0.8456666666666667 |       ArcFace         |                    |
 |   OHEM & NormFace     | 0.8456666666666667 |   OHEM & NormFace     |                    |
 |FocalLoss & NormFace   | 0.8396666666666667 |FocalLoss & NormFace   |                    |
-|     Contrastive       |                    |     Contrastive       |                    |
-|        Triplet        |                    |        Triplet        |                    |
-| Contrastive & Finetune|                    | Contrastive & Finetune|                    |
-| Triplet & Finetune    |                    | Triplet & Finetune    |                    |
+|Contrastive（Scratch） | 0.6135             | Contrastive（Scratch）|                    |
+|  Triplet（Scratch）   |                    |  Triplet（Scratch）   |                    |
+|Contrastive（Finetune）|                    |Contrastive（Finetune）|                    |
+| Triplet（Finetune）   |                    | Triplet（Finetune）   |                    |
 
-
-|	      SEResNet18      |        LFW         |	      SEResNet34       |        LFW         |
-|:---------------------:|:------------------:|:----------------------:|:------------------:|
-|Contrastive（Scratch） | 0.6135             | Contrastive（Scratch） | 0.6135             |
-|Triplet（Scratch）	    |                    |Triplet（Scratch）	     |                    |
-|Contrastive（Finetune）|                    |Contrastive（Finetune） |                    |		
-|Triplet（Finetune）	   |                    |Triplet（Finetune） 	   |                    |
+notes:Train from scratch and run 20 epochs
