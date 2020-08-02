@@ -36,7 +36,7 @@ unzip CASIA-maxpy-clean_fix.zip
 | Triplet & Finetune    |                    | Triplet & Finetune    |                    |
 
 
-|	      SEResNet18      |        LFW         |	      SEResNet18       |        LFW         |
+|	      SEResNet18      |        LFW         |	      SEResNet34       |        LFW         |
 |:---------------------:|:------------------:|:----------------------:|:------------------:|
 |Contrastive（Scratch） | 0.6135             | Contrastive（Scratch） | 0.6135             |
 |Triplet（Scratch）	    |                    |Triplet（Scratch）	     |                    |
