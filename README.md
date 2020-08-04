@@ -30,11 +30,11 @@ unzip CASIA-maxpy-clean_fix.zip
 |   OHEM & NormFace     | 0.8456666666666667          |   OHEM & NormFace     |0.8485000000000001           |
 |FocalLoss & NormFace   | 0.8396666666666667          |FocalLoss & NormFace   |0.8504999999999999           |
 
-notes:Train from scratch and run 20 epochs
+notes:Train from scratch and run 20 epochs @ Tesla P100 16G
 
-|      SEResNet18       |LFW                          |       SEResNet34      | LFW                                    |
-|:---------------------:|:---------------------------:|:---------------------:|:--------------------------------------:|
-|Contrastive（Scratch） |0.6135\20epoch\batchsize=128 | Contrastive（Scratch）|        \                               |
-|  Triplet（Scratch）   | Eval mAcc: 0.7968  @4Epoch  |  Triplet（Scratch）   |Eval mAcc: 0.8265  @4Epoch\batchsize=256|
-|Contrastive（Finetune）|     \                       |Contrastive（Finetune）|        \                               |
-| Triplet（Finetune）   |     \                       | Triplet（Finetune）   |        \                               |
+|      SEResNet18       |LFW                          |       SEResNet34      | LFW                                          |
+|:---------------------:|:---------------------------:|:---------------------:|:--------------------------------------------:|
+|Contrastive（Scratch） |0.6135\20epoch\batchsize=128 | Contrastive（Scratch）|        \                                     |
+|  Triplet（Scratch）   |0.7968\4epoch\batchsize=64   |  Triplet（Scratch）   |0.8265\4epoch\batchsize=256\Quadro RTX8000 48G|
+|Contrastive（Finetune）|0.63717\20epoch\batchsize=128|Contrastive（Finetune）|        \                                     |
+| Triplet（Finetune）   |     \                       | Triplet（Finetune）   |        \                                     |
