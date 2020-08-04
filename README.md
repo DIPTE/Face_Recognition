@@ -20,7 +20,7 @@ unzip CASIA-maxpy-clean_fix.zip
 
 ## Homework Result
 
-|      SEResNet18       |LFW（20epoch、batchsize=256）|       SEResNet34      |LFW（20epoch、batchsize=128）|
+|      SEResNet18       |  Best acc on LFW            |       SEResNet34      | Best acc on LFW             |
 |:---------------------:|:---------------------------:|:---------------------:|:---------------------------:|
 |       Softmax         | 0.851                       |       Softmax         |0.8578333333333333           |
 |       NormFace        | 0.8428333333333334          |       NormFace        |0.8470000000000001           |
@@ -30,11 +30,11 @@ unzip CASIA-maxpy-clean_fix.zip
 |   OHEM & NormFace     | 0.8456666666666667          |   OHEM & NormFace     |0.8485000000000001           |
 |FocalLoss & NormFace   | 0.8396666666666667          |FocalLoss & NormFace   |0.8504999999999999           |
 
-notes:Train from scratch and run 20 epochs @ Tesla P100 16G
+Notes: Train from scratch and run 20 epochs @ Tesla P100 16G; SEResNet18 @ 20epoch、batchsize=256; SEResNet34 @20epoch、batchsize=128
 
-|      SEResNet18       |LFW                          |       SEResNet34      | LFW                                          |
+|      SEResNet18       |Best acc on LFW              |       SEResNet34      | Best acc on LFW                              |
 |:---------------------:|:---------------------------:|:---------------------:|:--------------------------------------------:|
-|Contrastive（Scratch） |0.6135\20epoch\batchsize=128 | Contrastive（Scratch）|        \                                     |
-|  Triplet（Scratch）   |0.7968\4epoch\batchsize=64   |  Triplet（Scratch）   |0.8265\4epoch\batchsize=256\Quadro RTX8000 48G|
-|Contrastive（Finetune）|0.6371666666666667\20epoch\batchsize=128|Contrastive（Finetune）|        \                                     |
+|Contrastive（Scratch） |0.6135(20epoch、batchsize=128) | Contrastive（Scratch）|        \                                     |
+|  Triplet（Scratch）   |0.7968(4epoch、batchsize=64)   |  Triplet（Scratch）   |0.8265(4epoch、batchsize=256、Quadro RTX8000 48G)|
+|Contrastive（Finetune）|0.6371666666666667(20epoch、batchsize=128)|Contrastive（Finetune）|        \                                     |
 | Triplet（Finetune）   |     \                       | Triplet（Finetune）   |        \                                     |
