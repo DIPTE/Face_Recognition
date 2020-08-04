@@ -1,7 +1,6 @@
 # face_recognition
 Chapter5 - Homework - loss_function&amp;Deep_Metric_Learning - shenlanxueyuan
 
-
 # Dataset find it in GITHUB Share
 ## CASIAWebFace:
 
@@ -21,18 +20,21 @@ unzip CASIA-maxpy-clean_fix.zip
 
 ## Homework Result
 
-|      SEResNet18       |   LFW              |       SEResNet34      |   LFW              |
-|:---------------------:|:------------------:|:---------------------:|:------------------:|
-|       Softmax         | 0.851              |       Softmax         |                    |
-|       NormFace        | 0.8428333333333334 |       NormFace        |                    |
-|      SpereFace        | 0.8474999999999999 |      SpereFace        |                    |
-|       CosFace         | 0.8488333333333333 |       CosFace         |                    |
-|       ArcFace         | 0.8456666666666667 |       ArcFace         |                    |
-|   OHEM & NormFace     | 0.8456666666666667 |   OHEM & NormFace     |                    |
-|FocalLoss & NormFace   | 0.8396666666666667 |FocalLoss & NormFace   |                    |
-|Contrastive（Scratch） | 0.6135             | Contrastive（Scratch）|                    |
-|  Triplet（Scratch）   |                    |  Triplet（Scratch）   |                    |
-|Contrastive（Finetune）|                    |Contrastive（Finetune）|                    |
-| Triplet（Finetune）   |                    | Triplet（Finetune）   |                    |
+|      SEResNet18       |LFW（20epoch、batchsize=256）|       SEResNet34      |LFW（20epoch、batchsize=128）|
+|:---------------------:|:---------------------------:|:---------------------:|:---------------------------:|
+|       Softmax         | 0.851                       |       Softmax         |0.8578333333333333           |
+|       NormFace        | 0.8428333333333334          |       NormFace        |0.8470000000000001           |
+|      SpereFace        | 0.8474999999999999          |      SpereFace        |0.8651666666666665           |
+|       CosFace         | 0.8488333333333333          |       CosFace         |0.8504999999999999           |
+|       ArcFace         | 0.8456666666666667          |       ArcFace         |0.755                        |
+|   OHEM & NormFace     | 0.8456666666666667          |   OHEM & NormFace     |0.8485000000000001           |
+|FocalLoss & NormFace   | 0.8396666666666667          |FocalLoss & NormFace   |0.8504999999999999           |
 
 notes:Train from scratch and run 20 epochs
+
+|      SEResNet18       |LFW                          |       SEResNet34      |LFW                          |
+|:---------------------:|:---------------------------:|:---------------------:|:---------------------------:|
+|Contrastive（Scratch） |0.6135\20epoch\batchsize=128 | Contrastive（Scratch）|        \                    |
+|  Triplet（Scratch）   | Eval mAcc: 0.7968  @4Epoch  |  Triplet（Scratch）   |        \                    |
+|Contrastive（Finetune）|     \                       |Contrastive（Finetune）|        \                    |
+| Triplet（Finetune）   |     \                       | Triplet（Finetune）   |        \                    |
