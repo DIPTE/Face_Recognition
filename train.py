@@ -80,7 +80,8 @@ model = ResNet18()
 # model = resnet18(pretrained=False,loss_fn='triplet',num_classes=256 )
 summary(model.cuda(), (3, 112, 112))
 model = model.to(device)
-
+# model.load_state_dict(torch.load('./checkpoints/se_resnet18_CosFace_Contrastive_best.pth',map_location='cpu'))
+  
 # print(margin_type)
 margin=margin_type
 # '''
@@ -98,7 +99,8 @@ elif margin_type == 'ArcFace':
 else:
     raise NameError("Margin Not Supported!")
 margin = margin.to(device)
-
+# margin.load_state_dict(torch.load('./checkpoints/se_resnet18_512_CosFace_Contrastive_best.pth',map_location='cpu'))
+  
 
 #Set criterion
 if criterion=='Softmax' or criterion=='NormFace' or criterion=='SphereFace'or criterion=='CosFace'or criterion=='ArcFace':
