@@ -33,8 +33,8 @@ unzip CASIA-maxpy-clean_fix.zip
 notes:Train from scratch and run 20 epochs
 
 |      SEResNet18       |LFW                          |       SEResNet34      | LFW                                    |
-|:---------------------:|:---------------------------:|:---------------------:|:---------------------------------- ---:|
+|:---------------------:|:---------------------------:|:---------------------:|:--------------------------------------:|
 |Contrastive（Scratch） |0.6135\20epoch\batchsize=128 | Contrastive（Scratch）|        \                               |
-|  Triplet（Scratch）   | Eval mAcc: 0.7968  @4Epoch  |  Triplet（Scratch）   |Eval mAcc: 0.8265, @4Epoch\batchsize=256|
+|  Triplet（Scratch）   | Eval mAcc: 0.7968  @4Epoch  |  Triplet（Scratch）   |Eval mAcc: 0.8265  @4Epoch\batchsize=256|
 |Contrastive（Finetune）|     \                       |Contrastive（Finetune）|        \                               |
 | Triplet（Finetune）   |     \                       | Triplet（Finetune）   |        \                               |
