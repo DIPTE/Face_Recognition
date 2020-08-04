@@ -1,4 +1,4 @@
-# face_recognition
+# Face_Recognition
 Chapter5 - Homework - loss_function&amp;Deep_Metric_Learning - shenlanxueyuan
 
 ## Dataset find it in GITHUB Share
